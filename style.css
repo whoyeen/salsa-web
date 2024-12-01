@@ -1,0 +1,302 @@
+.dashboard-container {
+    background-color: #E8F3FF; /* Blue background */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px 10px; /* Reduced padding */
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px 20px; /* Reduced gap */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dashboard-title {
+    color: #0052b4; /* Corrected color for title */
+    font: 600 30px Inter, sans-serif; /* Reduced font size */
+}
+.search-wrapper {
+    border-radius: 5px; /* Reduced border radius */
+    display: flex;
+    width: 250px; /* Reduced width */
+    min-width: 200px; /* Adjusted min-width */
+}
+
+.search-input {
+    border-radius: 5px; /* Reduced border radius */
+    background-color: #fff;
+    padding: 8px 25px; /* Reduced padding */
+    border: 1px solid rgb(0, 82, 180);
+    width: 100%;
+    color: rgba(138, 138, 138, 1);
+    font: 500 10px Open Sans, sans-serif; /* Smaller font size */
+}
+
+.main-content {
+    margin-top: 15px; /* Reduced margin */
+    display: flex;
+    gap: 15px; /* Reduced gap */
+}
+
+.sidebar {
+    border-radius: 4px;
+    background-color: #0052b4; /* Darker blue for sidebar */
+    display: flex;
+    min-height: 700px; /* Reduced height */
+    width: 20%; /* Reduced sidebar width */
+    flex-direction: column;
+    padding: 30px 0; /* Reduced padding */
+    margin-right: 15px; /* Reduced space between sidebar and content */
+}
+
+.nav-item {
+    color: #fff;
+    font: 600 18px Inter, sans-serif; /* Reduced font size */
+    padding: 15px 50px; /* Reduced padding */
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.nav-item:hover {
+    background-color: #004085; /* Even darker blue on hover */
+}
+
+.nav-item-settings {
+    color: #66d9ff; /* Light blue for settings */
+}
+
+.nav-item-logout {
+    color: #ffbb97; /* Light peach for logout */
+}
+
+.content-wrapper {
+    width: 80%; /* Adjusted width */
+    margin-left: 15px; /* Reduced margin-left */
+}
+
+.welcome-banner {
+    border-radius: 4px;
+    background-color: #0052B4; /* Blue background for welcome banner */
+    display: flex;
+    padding: 15px 30px; /* Reduced padding */
+    color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome-banner img {
+    margin-top: 30px; /* Reduced margin */
+}
+
+.welcome-text {
+    flex-grow: 1;
+    min-width: 150px; /* Reduced min-width */
+}
+
+.welcome-heading {
+    font: 600 25px/30px Inter, sans-serif; /* Smaller font size */
+    letter-spacing: -1px; /* Slightly reduced letter-spacing */
+}
+
+.welcome-description .progress {
+    line-height: 25px; /* Reduced line height */
+}
+
+.profile-image {
+    width: 80px; /* Reduced width */
+    height: 80px; /* Reduced height */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stats-grid {
+    display: flex;
+    margin-top: 10px;
+    gap: 15px; /* Reduced gap */
+    flex-wrap: wrap;
+}
+
+.stats-chart {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 12px 15px 20px; /* Reduced padding */
+    flex-grow: 1;
+}
+
+.stats-title {
+    color: #2e3a59;
+    font: 600 16px/1.5 Inter, sans-serif; /* Smaller font size */
+}
+
+.stats-image {
+    width: 100%;
+    margin-top: 20px; /* Reduced margin */
+}
+
+.progress-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 12px; /* Reduced padding */
+    flex-grow: 1;
+}
+
+.progress-title {
+    color: #272835;
+    font: 600 16px/1 Inter, sans-serif; /* Smaller font size */
+}
+
+.progress-list {
+    margin-top: 12px; /* Reduced margin */
+}
+
+.progress-item {
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    min-height: 60px; /* Reduced height */
+    padding: 10px; /* Reduced padding */
+    margin-top: 5px;
+}
+
+.progress-item:first-child {
+    margin-top: 0;
+}
+
+.progress-name {
+    color: #272835;
+    font: 600 12px Inter, sans-serif; /* Smaller font size */
+    padding-top: 10px; /* Reduced padding */
+    line-height: 20px; /* Reduced line height */
+}
+
+.progress-detail {
+    color: #0056b3; /* Blue color for details */
+    font: 400 12px Inter, sans-serif; /* Smaller font size */
+}
+
+.document-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 12px; /* Reduced padding */
+    margin-top: 10px; /* Reduced margin-top */
+}
+
+.document-title {
+    color: #272835;
+    font: 600 16px/1 Inter, sans-serif; /* Smaller font size */
+}
+
+.document-list {
+    margin-top: 12px; /* Reduced margin */
+}
+
+.document-item {
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    min-height: 25px; /* Reduced height */
+    padding: 10px; /* Reduced padding */
+    margin-top: 8px; /* Reduced margin */
+    font: 14px Inter, sans-serif; /* Smaller font size */
+}
+
+.document-item:first-child {
+    margin-top: 0;
+}
+
+.document-link {
+    color: #0056b3; /* Blue color for links */
+    text-decoration: underline;
+    line-height: 25px; /* Reduced line height */
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .dashboard-container {
+        padding: 0 10px; /* Reduced padding */
+    }
+
+    .header-wrapper,
+    .main-content,
+    .content-wrapper,
+    .welcome-banner,
+    .stats-chart,
+    .document-section {
+        max-width: 100%; /* Ensures sections take up full width on smaller screens */
+    }
+
+    .main-content {
+        flex-direction: column; /* Stack sections vertically */
+        width: 100%; /* Full width */
+        gap: 15px; /* Gap between the sections (like statics, progress, etc.) */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        margin-top: 15px; /* Space between sidebar and content */
+    }
+
+    .nav-item {
+        padding: 12px 20px; /* Reduced padding for smaller screens */
+        font: 500 16px Inter, sans-serif; /* Reduced font size */
+        text-align: center; /* Center text */
+    }
+
+    .content-wrapper {
+        width: 100%; /* Full width */
+        margin-left: 0; /* Remove margin-left */
+        margin-top: 15px; /* Space between sidebar and content */
+    }
+
+    /* Welcome Banner Adjustments */
+    .welcome-banner {
+        padding: 15px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .stats-grid {
+        gap: 15px; /* Reduced gap */
+        flex-wrap: wrap; /* Wrap elements if they overflow */
+    }
+
+    .stats-chart,
+    .progress-section,
+    .document-section {
+        width: 100%; /* Ensure each section takes full width */
+        margin-top: 15px; /* Add space between sections */
+    }
+
+    .stats-title,
+    .progress-title,
+    .document-title {
+        font-size: 16px; /* Reduced title font size */
+    }
+
+    .stats-image {
+        margin-top: 30px; /* Reduced space between image and title */
+    }
+
+    .stats-chart,
+    .progress-section,
+    .document-section {
+        background-color: #fff; /* Ensure background is white */
+        border-radius: 5px;
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard-container {
+        display: none; /* Hide the dashboard completely on very small screens */
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
